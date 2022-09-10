@@ -1,0 +1,27 @@
+Step-1:-Create one Folder 
+Step-2:-Open that folder in the Visual code
+Step-3:-Open the Xampp Server and start the two server Apache and Mysql
+Step-4:-Minimize the Xampp Server
+Step-5:-Write in VS code Terminal npm install mysql
+Step6:-Create Connection.js File
+	   var mysql=require('mysql');
+Step7:-Write Code for Connection 
+	   var conn=mysql.createConnection
+	   (
+		host:'localhost',
+		user: 'root',
+		password: ''
+	   );//To connect our mysql database
+Step8:-conn.query('create database mydb'); //to create a database in our mysql database
+Step9:-console.log('Database Created Successfully');// to show in a terminal our database is created successfully
+Step10:-conn.end() // we write this because we have end also our connection
+Step11:-Xampp Server click on Admin it will take to the website of phpmyadmin
+Step12:-If our Database is already created then our Step 7 would be to create table
+	   var conn=mysql.createConnection
+	   (
+		host:'localhost',
+		user: 'root',
+		password: '',
+	   	database:'mydb',
+	   )
+Step13:-conn.query('create table customer(name varchar(30),address varchar(50))')
